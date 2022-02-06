@@ -1,4 +1,7 @@
 <header>
   <h1>Task tracker</h1>
-  <app-button (btnclick)="toggleAddTask()"></app-button>
+  <app-button
+    text="{{ showAddTask ? 'close' : 'Add' }}"
+    (btnclick)="toggleAddTask()"
+  ></app-button>
 </header>
